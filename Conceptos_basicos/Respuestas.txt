@@ -1,0 +1,7 @@
+Respuestas
+
+  1. echo $0
+  2. sh   echo $0   exit
+  3. ls /etc/ > file-tmp
+  4. ls /bin/ >> file-tmp
+  5. ls /etc /usr > file-tmp
