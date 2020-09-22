@@ -1,0 +1,1 @@
+Tendriamos que editar el archivo ~/.bash_profile y escribiriendo dentro el comando alias segido del nombre, luego un igual y por ultimo el comando que quieres que haga cuando pongas dicha palabra en la termianl. 

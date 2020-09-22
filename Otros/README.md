@@ -9,4 +9,4 @@ Otros
     7. Eliminar de un fichero las líneas vacías o que sólo tengan espacios y/o tabuladores.
     8. Exportar el contenido del fichero /etc/passwd a un fichero html. Los datos deberán aparecer en formato tabla: a) Una fila por cada usuario b) Una columna por cada usuario
     9. Buscar en el fichero /etc/shadow aquellos usuarios que tengan contraseña establecida.
-    10. Dada la ejecuciión de un determinado programa, filtrar las líneas de la salida estandard que continen un campo de fecha con un determinado valor. P.e, procesar las lineas de ejecutar el comando last -F cuya fecha logging es posterior a una fecha dada
+    10. Dada la ejecución de un determinado programa, filtrar las líneas de la salida estandard que continen un campo de fecha con un determinado valor. P.e, procesar las lineas de ejecutar el comando last -F cuya fecha logging es posterior a una fecha dada
