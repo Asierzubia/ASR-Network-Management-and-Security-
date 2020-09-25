@@ -1,19 +1,16 @@
 #!/bin/sh
 
-#Lo hago para quitarme los espacios que hay en las lineas
-identificadores=$(cat -s /etc/passwd | sed 's/ //g')
 maximo=0
-for i in $identificadores
-do
-    #Ahora me voy a quedar solo con el tercer campo que es lo que me interesa
-    usu=$(echo ${i%:*:*:*:*})
-    usuario_final=$(echo ${usu##*:})
-    if [[ $usuario_final -ge $maximo]]
-    then
-        maximo=$usuario_final
-    fi
+usuario="root"
+cat /etc/passwd | (while IFS=":" read nombre pass id_usu  resto
+do	
+    	if [[ $id_usu -ge $maximo ]]
+    	then
+        	maximo=$id_usu
+		usuario=$nombre
+    	fi
 done
 
-echo $usuario_final
+echo $usuario $maximo;)
 
 

@@ -1,3 +1,4 @@
 #!/bin/usr/sh
 
-echo $0
+echo "hola" 1> prueba.txt
+echo "hola" 2> prueba.txt

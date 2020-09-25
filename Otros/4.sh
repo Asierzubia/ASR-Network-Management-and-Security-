@@ -1,13 +1,10 @@
 #!/bin/sh
 
-lista_identificadores=$(cat /etc/passwd | sed 's/ //g')
-
-for i in $lista_identificadores
+#Lo hago para quitarme los espacios que hay en las lineas
+cat /etc/passwd | while IFS=":" read nombre pass id_usu resto
 do
-    identificador=$(echo ${i%:*:*:*:*})
-    identificador_final=$(echo ${identificador##*:})
-    if [[ $identificador_final -ge 100 ]]
+    if [[ $id_usu -gt 100 ]]
     then
-        echo $identificador_final
+        echo $nombre
     fi
 done
