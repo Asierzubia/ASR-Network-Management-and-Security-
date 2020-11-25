@@ -1,0 +1,27 @@
+Tema 4. Arranque y parada. Procesos periódicos. Gestión del software
+4.1 Arranque del sistema y servidores
+
+    Verificar cual es tu nivel de ejecución por defecto. Examinar los servidores que se activan en ese nivel y comprobar que esos servidores estén en marcha. Para uno de esos servidores, comprobar que no responde y a continuación activarlo.
+    Comenta cada sección del fichero /etc/inittab
+    A partir del fichero inittab, obtener la lista de los servidores que se lanzan en el arranque de la máquina virtual.
+    Desactiva la puesta en marcha inicial de webmin.
+    Describe las diferencias más reseñables entre el sistema de arranque sysvinit y systemd
+    Describe la mejora más reseñable del sistema de arranque systemd frente al sysvinit
+    Describe la información que aparece en una Targetsystemd
+    Queremos configurar el arranque de un servidor para que arranque en el nivel 5 o el graphical.tarjet. Indica cómo lo realizarías en un servidor con sistema de arranque sysvinit y en otro con systemd.
+
+4.2 Procesos periódicos
+
+    Crea una tarea periódica que envíe un mensaje al terminal pts/3 cada 5 minutos.
+    Analiza contenido del directorio /etc/cron.daily. ¿Qué es lo que contiene?. Analiza y explica qué hace el fichero file:passwd contenido en ese directorio.
+    Sigue los pasos necesarios para que cada media hora se registren, como logs, los usuarios que están trabajando y el número de procesos activos.
+    Debes activar automáticamente cada semana el script de ejemplo (script de control de cuentas) script_cuentas1 del apartado 3.3
+    Configura el sistema para que cada semana se ejecute el script BackupTotal y cada día el script BackupIncremental.
+    Modifica el ejercicio en el que se detenían procesos en el apartado 3.4 Procesos y memoria, del tal modo que para que cada día a las 20:00 ponga en marcha los procesos que se han parado durante el día[1]. Además queremos que a las 8:00 de la mañana se vuelvan a parar aquellos procesos previos sin terminar. Igualmente a las 8:00 se debe regenerar el fichero de log /var/log/Lista-procesos-ExcesoCPU-Parados.txt con la lista de los PIDs de los procesos parados.
+
+[1]	Los indicados en el fichero /var/log/Lista-procesos-ExcesoCPU-Parados.txt resultante de aquel ejercicio
+4.3 Instalación del Software
+
+    Describe que es un paquete de Linux Debian y que tipo de información contiene.
+    Describe las diferencias entre instalar una aplicación a través de un repositorio de paquetes o través de un código fuente.
+
