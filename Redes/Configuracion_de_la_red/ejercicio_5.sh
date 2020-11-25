@@ -1,0 +1,1 @@
+sudo ifconfig lo | grep "inet " | tr -s [:blank:] | cut -d' ' -f3
